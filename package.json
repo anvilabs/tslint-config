@@ -36,7 +36,8 @@
     "{*.json,.vscode/*.json}": ["yarn run format", "git add"]
   },
   "peerDependencies": {
-    "tslint": "^5.8.0"
+    "tslint": "^5.8.0",
+    "typescript": ">=2.1 <=2.6"
   },
   "devDependencies": {
     "@anvilabs/eslint-config": "^17.0.0",
