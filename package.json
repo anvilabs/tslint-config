@@ -1,0 +1,68 @@
+{
+  "name": "@anvilabs/tslint-config",
+  "version": "0.0.0-development",
+  "description": "Anvilabs' shareable TSLint config",
+  "keywords": [
+    "tslint",
+    "tslint config",
+    "config",
+    "anvilabs",
+    "styleguide"
+  ],
+  "repository": "anvilabs/tslint-config",
+  "homepage": "https://github.com/anvilabs/tslint-config#readme",
+  "bugs": {
+    "url": "https://github.com/anvilabs/tslint-config/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Ayan Yenbekbay",
+    "email": "ayan.yenb@gmail.com",
+    "url": "https://yenbekbay.me"
+  },
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "format": "prettier --write",
+    "lint": "eslint --cache",
+    "lint-all": "yarn run lint .",
+    "lint-fix": "yarn run lint --fix",
+    "lint-fix-all": "yarn run lint-fix .",
+    "test": "yarn run lint-all",
+    "precommit": "lint-staged",
+    "commitmsg": "commitlint -e",
+    "prepush": "yarn test",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn run lint-fix",
+      "git add"
+    ],
+    "{*.json,.vscode/*.json}": [
+      "yarn run format",
+      "git add"
+    ]
+  },
+  "peerDependencies": {
+    "tslint": "^5.8.0"
+  },
+  "devDependencies": {
+    "@anvilabs/eslint-config": "^17.0.0",
+    "@commitlint/cli": "^5.2.0",
+    "@commitlint/config-conventional": "^5.1.3",
+    "eslint": "^4.12.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.8.2",
+    "semantic-release": "^8.2.0"
+  },
+  "dependencies": {
+    "tslint-misc-rules": "^3.2.1",
+    "tslint-sonarts": "^1.2.0"
+  }
+}
