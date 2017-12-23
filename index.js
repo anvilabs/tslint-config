@@ -1,9 +1,11 @@
 const resolvePkg = require('resolve-pkg');
 
 module.exports = {
-  rulesDirectory: ['tslint-sonarts/lib/rules', 'tslint-misc-rules/rules'].map(
-    rulesDir => resolvePkg(rulesDir, {cwd: __dirname})
-  ),
+  rulesDirectory: [
+    'tslint-immutable/rules',
+    'tslint-sonarts/lib/rules',
+    'tslint-misc-rules/rules',
+  ].map(rulesDir => resolvePkg(rulesDir, {cwd: __dirname})),
   rules: {
     // only TS-specific core rules
     // TODO: keep an eye on https://github.com/nzakas/eslint-plugin-typescript/issues/5
@@ -38,6 +40,17 @@ module.exports = {
     'strict-type-predicates': true,
     'unified-signatures': true,
     'use-default-type-parameter': true,
+
+    // all tslint-immutable rules
+    'no-class': false, // too strict
+    'no-expression-statement': false, // too strict
+    'no-let': false, // ESLint's `prefer-const` takes care of this
+    'no-method-signature': false, // too strict
+    'no-mixed-interface': false, // too strict
+    'no-object-mutation': true,
+    'no-this': false, // too strict
+    'readonly-array': true,
+    'readonly-keyword': false, // too strict
 
     // all SonarTS rules
     'no-accessor-field-mismatch': true,
