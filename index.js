@@ -52,7 +52,7 @@ module.exports = {
     'no-gratuitous-expressions': true,
     'no-identical-conditions': true,
     'no-identical-expressions': true,
-    'no-identical-functions': false, // false positives with `knex.schema.table` callbacks
+    'no-identical-functions': true,
     'no-ignored-initial-value': true,
     'no-ignored-return': true,
     'no-inconsistent-return': false, // TSC's `noImplicitReturns` takes care of this
