@@ -49,7 +49,7 @@ module.exports = {
     'no-mixed-interface': false, // too strict
     'no-object-mutation': true,
     'no-this': false, // too strict
-    'readonly-array': true,
+    'readonly-array': false, // too strict
     'readonly-keyword': false, // too strict
 
     // all SonarTS rules
