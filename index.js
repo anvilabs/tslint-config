@@ -47,7 +47,7 @@ module.exports = {
     'no-let': false, // ESLint's `prefer-const` takes care of this
     'no-method-signature': false, // too strict
     'no-mixed-interface': false, // too strict
-    'no-object-mutation': true,
+    'no-object-mutation': false, // too strict
     'no-this': false, // too strict
     'readonly-array': false, // too strict
     'readonly-keyword': false, // too strict
