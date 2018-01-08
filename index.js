@@ -60,7 +60,7 @@ module.exports = {
     'no-all-duplicated-branches': true,
     'no-array-delete': true,
     'no-collection-size-mischeck': true,
-    'no-dead-store': false, // false positives with object rest properties
+    'no-dead-store': true,
     'no-duplicated-branches': true,
     'no-element-overwrite': true,
     'no-empty-destructuring': false, // ESLint's `no-empty-pattern` takes care of this
