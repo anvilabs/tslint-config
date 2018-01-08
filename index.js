@@ -56,10 +56,14 @@ module.exports = {
     'readonly-keyword': false, // too strict
 
     // all SonarTS rules
+    'cognitive-complexity': true,
+    'mccabe-complexity': false, // disabled in favor of `cognitive-complexity`
     'no-accessor-field-mismatch': true,
     'no-all-duplicated-branches': true,
     'no-array-delete': true,
+    'no-case-with-or': true,
     'no-collection-size-mischeck': true,
+    'no-commented-code': false, // seems too problematic
     'no-dead-store': true,
     'no-duplicated-branches': true,
     'no-element-overwrite': true,
@@ -86,6 +90,8 @@ module.exports = {
     'no-useless-cast': true,
     'no-useless-increment': true,
     'no-variable-usage-before-declaration': false, // ESLint's `no-shadow` and `no-use-before-define` make this impossible
+    'prefer-immediate-return': true,
+    'use-primitive-type': false, // ESLint's `no-new-wrappers` takes care of this
     'use-type-alias': true,
 
     // all misc TSLint rules
