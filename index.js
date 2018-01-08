@@ -43,8 +43,11 @@ module.exports = {
 
     // all tslint-immutable rules
     'no-class': false, // too strict
+    'no-delete': true,
     'no-expression-statement': false, // too strict
+    'no-if-statement': false, // too strict
     'no-let': false, // ESLint's `prefer-const` takes care of this
+    'no-loop-statement': false, // too strict
     'no-method-signature': false, // too strict
     'no-mixed-interface': false, // too strict
     'no-object-mutation': false, // too strict
