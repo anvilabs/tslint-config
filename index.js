@@ -90,7 +90,7 @@ module.exports = {
     'no-useless-cast': true,
     'no-useless-increment': true,
     'no-variable-usage-before-declaration': false, // ESLint's `no-shadow` and `no-use-before-define` make this impossible
-    'prefer-immediate-return': true,
+    'prefer-immediate-return': false, // I like to be explicit
     'use-primitive-type': false, // ESLint's `no-new-wrappers` takes care of this
     'use-type-alias': true,
 
