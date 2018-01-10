@@ -2,13 +2,7 @@
   "name": "@anvilabs/tslint-config",
   "version": "0.0.0-development",
   "description": "Anvilabs' shareable TSLint config",
-  "keywords": [
-    "tslint",
-    "tslint config",
-    "config",
-    "anvilabs",
-    "styleguide"
-  ],
+  "keywords": ["tslint", "tslint config", "config", "anvilabs", "styleguide"],
   "repository": "anvilabs/tslint-config",
   "homepage": "https://github.com/anvilabs/tslint-config#readme",
   "bugs": {
@@ -20,9 +14,7 @@
     "email": "ayan.yenb@gmail.com",
     "url": "https://yenbekbay.me"
   },
-  "files": [
-    "index.js"
-  ],
+  "files": ["index.js"],
   "engines": {
     "node": ">=6.0.0"
   },
@@ -36,20 +28,15 @@
     "precommit": "lint-staged",
     "commitmsg": "commitlint -e",
     "prepush": "yarn test",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release":
+      "semantic-release pre && npm publish && semantic-release post"
   },
   "lint-staged": {
-    "*.js": [
-      "yarn run lint-fix",
-      "git add"
-    ],
-    "{*.json,.vscode/*.json}": [
-      "yarn run format",
-      "git add"
-    ]
+    "*.js": ["yarn run lint-fix", "git add"],
+    "{*.json,.vscode/*.json}": ["yarn run format", "git add"]
   },
   "peerDependencies": {
-    "tslint": "^5.8.0",
+    "tslint": "^5.9.0",
     "typescript": ">=2.1 <=2.6"
   },
   "devDependencies": {

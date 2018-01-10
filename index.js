@@ -28,6 +28,8 @@ module.exports = {
     'no-unnecessary-type-assertion': true,
     'no-unsafe-any': false, // too strict for now
     'no-void-expression': true,
+    'object-literal-sort-keys': false, // TODO: consider enabling when a fixer is added
+    'prefer-readonly': false, // too strict
     'promise-function-async': true,
     'restrict-plus-operands': false, // false posities with phantom types (`As<T>`)
     'return-undefined': true,
