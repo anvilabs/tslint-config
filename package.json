@@ -36,7 +36,7 @@
   },
   "peerDependencies": {
     "tslint": "^5.9.0",
-    "typescript": ">=2.1 <=2.6"
+    "typescript": ">=2.1 <=2.7"
   },
   "devDependencies": {
     "@anvilabs/eslint-config": "^17.2.1",
