@@ -28,8 +28,7 @@
     "precommit": "lint-staged",
     "commitmsg": "commitlint -e",
     "prepush": "yarn test",
-    "semantic-release":
-      "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release"
   },
   "lint-staged": {
     "*.js": ["yarn run lint-fix", "git add"],
@@ -40,14 +39,14 @@
     "typescript": ">=2.1 <=2.6"
   },
   "devDependencies": {
-    "@anvilabs/eslint-config": "^17.1.0",
-    "@commitlint/cli": "^6.0.1",
-    "@commitlint/config-conventional": "^5.2.3",
-    "eslint": "^4.15.0",
+    "@anvilabs/eslint-config": "^17.2.1",
+    "@commitlint/cli": "^6.0.5",
+    "@commitlint/config-conventional": "^6.0.4",
+    "eslint": "^4.16.0",
     "husky": "^0.14.3",
-    "lint-staged": "^6.0.0",
-    "prettier": "^1.10.1",
-    "semantic-release": "^8.2.0"
+    "lint-staged": "^6.1.0",
+    "prettier": "^1.10.2",
+    "semantic-release": "^12.4.1"
   },
   "dependencies": {
     "resolve-pkg": "^1.0.0",
