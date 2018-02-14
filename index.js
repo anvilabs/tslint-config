@@ -48,11 +48,11 @@ module.exports = {
     'no-delete': true,
     'no-expression-statement': false, // too strict
     'no-if-statement': false, // too strict
-    'no-let': false, // ESLint's `prefer-const` takes care of this
+    'no-let': [true, 'ignore-local'],
     'no-loop-statement': false, // too strict
-    'no-method-signature': false, // too strict
+    'no-method-signature': true,
     'no-mixed-interface': false, // too strict
-    'no-object-mutation': false, // too strict
+    'no-object-mutation': [true, {'ignore-prefix': ['this.']}],
     'no-this': false, // too strict
     'readonly-array': false, // too strict
     'readonly-keyword': false, // too strict
