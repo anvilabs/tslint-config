@@ -40,9 +40,9 @@
   },
   "devDependencies": {
     "@anvilabs/commitlint-config": "^1.0.0",
-    "@anvilabs/eslint-config": "^17.2.1",
-    "@commitlint/cli": "^6.0.5",
-    "eslint": "^4.16.0",
+    "@anvilabs/eslint-config": "^17.3.0",
+    "@commitlint/cli": "^6.1.0",
+    "eslint": "^4.17.0",
     "husky": "^0.14.3",
     "lint-staged": "^6.1.0",
     "prettier": "^1.10.2",
