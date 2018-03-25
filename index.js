@@ -50,7 +50,7 @@ module.exports = {
     'no-if-statement': false, // too strict
     'no-let': [true, 'ignore-local'],
     'no-loop-statement': false, // too strict
-    'no-method-signature': true,
+    'no-method-signature': false, // too strict
     'no-mixed-interface': false, // too strict
     'no-object-mutation': [true, {'ignore-prefix': ['this.']}],
     'no-this': false, // too strict
