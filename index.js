@@ -118,7 +118,7 @@ module.exports = {
     'no-unnecessary-parens-for-arrow-function-arguments': false, // prettier takes care of this
     'prefer-es6-imports': false, // not needed with "es6" module target
     'prefer-or-operator-over-ternary': false, // prettier makes with impossible
-    'react-lifecycle-order': true, // TODO: disable when https://github.com/yannickcr/eslint-plugin-react/pull/1470 is released
+    'react-lifecycle-order': false,
     'sort-imports': [false, 'whitespace-insensitive'], // doesn't work with import groups
   },
 };
