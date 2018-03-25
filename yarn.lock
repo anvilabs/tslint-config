@@ -5252,19 +5252,19 @@ tryit@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/tryit/-/tryit-1.0.3.tgz#393be730a9446fd1ead6da59a014308f36c289cb"
 
-tslint-immutable@^4.5.1:
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/tslint-immutable/-/tslint-immutable-4.5.1.tgz#85cf4366ae60acb341ebdd3e1ea8b670d6cf2a11"
+tslint-immutable@^4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/tslint-immutable/-/tslint-immutable-4.5.2.tgz#caa6fffb60467004635b71587d9683cc26a07ca8"
 
-tslint-misc-rules@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/tslint-misc-rules/-/tslint-misc-rules-3.2.1.tgz#f8205840a7b7b88387b0859dbd86694bf4120ca0"
+tslint-misc-rules@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/tslint-misc-rules/-/tslint-misc-rules-3.3.2.tgz#a0a2121e7908ef9dfac3cf6b51cde6a79890f6d3"
   dependencies:
     detect-newline "^2.1.0"
 
-tslint-sonarts@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/tslint-sonarts/-/tslint-sonarts-1.4.0.tgz#90ae06c884b2ba92f81fd7bf76d8aae12313a5f1"
+tslint-sonarts@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/tslint-sonarts/-/tslint-sonarts-1.6.0.tgz#b21366029d83e2426d207174255bb2e09525e162"
   dependencies:
     immutable "^3.8.2"
 
