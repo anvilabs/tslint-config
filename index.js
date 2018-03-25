@@ -63,15 +63,19 @@ module.exports = {
     'no-accessor-field-mismatch': true,
     'no-all-duplicated-branches': true,
     'no-array-delete': true,
+    'no-big-function': false, // ESLint's `max-statements` takes care of this
     'no-case-with-or': true,
     'no-collection-size-mischeck': true,
     'no-commented-code': false, // seems too problematic
     'no-dead-store': true,
+    'no-duplicate-string': true,
     'no-duplicated-branches': true,
     'no-element-overwrite': true,
     'no-empty-destructuring': false, // ESLint's `no-empty-pattern` takes care of this
     'no-empty-nested-blocks': false, // ESLint's `no-empty` takes care of this
+    'no-extra-semicolon': false, // prettier takes care of this
     'no-gratuitous-expressions': true,
+    'no-hardcoded-credentials': false, // unnecessary
     'no-identical-conditions': true,
     'no-identical-expressions': true,
     'no-identical-functions': true,
@@ -81,9 +85,13 @@ module.exports = {
     'no-misleading-array-reverse': true,
     'no-misspelled-operator': false, // useless, as these operators wouldn't compile after formatting
     'no-multiline-string-literals': false, // ESLint's `no-multi-str` takes care of this
+    'no-nested-incdec': false, // `++` and `--` are not allowed anyway
+    'no-redundant-boolean': true,
     'no-redundant-parentheses': false, // prettier takes care of this
     'no-same-line-conditional': false, // prettier takes care of this
     'no-self-assignment': false, // ESLint's `no-self-assign` takes care of this
+    'no-small-switch': true,
+    'no-statements-same-line': false, // prettier takes care of this
     'no-unconditional-jump': true,
     'no-unenclosed-multiline-block': false, // prettier makes this impossible
     'no-unthrown-error': false, // doesn't work with non-standard errors and already covered by ESLint's `no-new`
@@ -92,6 +100,7 @@ module.exports = {
     'no-useless-cast': true,
     'no-useless-increment': true,
     'no-variable-usage-before-declaration': false, // ESLint's `no-shadow` and `no-use-before-define` make this impossible
+    'parameters-max-number': false, // ESLint's `max-params` takes care of this
     'prefer-immediate-return': false, // I like to be explicit
     'use-primitive-type': false, // ESLint's `no-new-wrappers` takes care of this
     'use-type-alias': true,
