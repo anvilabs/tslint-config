@@ -30,6 +30,24 @@
     "prepush": "yarn test",
     "semantic-release": "semantic-release"
   },
+  "prettier": {
+    "bracketSpacing": false,
+    "jsxBracketSameLine": false,
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "useTabs": false,
+    "overrides": [
+      {
+        "files": ["*.js", ".*.js"],
+        "options": {
+          "trailingComma": "es5"
+        }
+      }
+    ]
+  },
   "lint-staged": {
     "*.js": ["yarn run lint-fix", "git add"],
     "{*.json,.vscode/*.json}": ["yarn run format", "git add"]

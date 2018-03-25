@@ -6,13 +6,19 @@
   "[json]": {
     "editor.formatOnSave": true
   },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
 
   "eslint.autoFixOnSave": true,
+  "eslint.options": {
+    "rules": {
+      "prettier/prettier": "off"
+    }
+  },
 
   "files.autoSave": "off",
   "files.exclude": {
     ".eslintcache": true
-  },
-
-  "prettier.disableLanguages": ["javascript"]
+  }
 }
