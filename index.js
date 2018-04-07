@@ -104,21 +104,5 @@ module.exports = {
     'prefer-immediate-return': false, // I like to be explicit
     'use-primitive-type': false, // ESLint's `no-new-wrappers` takes care of this
     'use-type-alias': true,
-
-    // all misc TSLint rules
-    'camel-case-local-functions': false, // too strict for now
-    'class-method-newlines': true,
-    'declare-class-methods-after-use': false, // we do the other way around
-    'jsx-attribute-spacing': false, // conflicts with prettier
-    'jsx-expression-spacing': false, // conflicts with prettier
-    'jsx-no-braces-for-string-attributes': false, // conflicts with prettier
-    'jsx-no-closing-bracket-newline': false, // conflicts with prettier
-    'no-braces-for-single-line-arrow-functions': false, // conflicts with `no-void-expression`
-    'no-property-initializers': false, // using this from time to time
-    'no-unnecessary-parens-for-arrow-function-arguments': false, // prettier takes care of this
-    'prefer-es6-imports': false, // not needed with "es6" module target
-    'prefer-or-operator-over-ternary': false, // prettier makes with impossible
-    'react-lifecycle-order': false,
-    'sort-imports': [false, 'whitespace-insensitive'], // doesn't work with import groups
   },
 };

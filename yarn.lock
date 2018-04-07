@@ -5256,12 +5256,6 @@ tslint-immutable@^4.5.2:
   version "4.5.2"
   resolved "https://registry.yarnpkg.com/tslint-immutable/-/tslint-immutable-4.5.2.tgz#caa6fffb60467004635b71587d9683cc26a07ca8"
 
-tslint-misc-rules@^3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/tslint-misc-rules/-/tslint-misc-rules-3.3.2.tgz#a0a2121e7908ef9dfac3cf6b51cde6a79890f6d3"
-  dependencies:
-    detect-newline "^2.1.0"
-
 tslint-sonarts@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/tslint-sonarts/-/tslint-sonarts-1.6.0.tgz#b21366029d83e2426d207174255bb2e09525e162"
