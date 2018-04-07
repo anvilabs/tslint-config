@@ -9,29 +9,26 @@ module.exports = {
   rules: {
     // only TS-specific core rules
     // TODO: keep an eye on https://github.com/nzakas/eslint-plugin-typescript/issues/5
+    'adjacent-overload-signatures': true,
     'array-type': [true, 'array'],
-    'await-promise': false, // false positives with knex
     'callable-types': true,
-    'match-default-export-name': false, // conflicts with some packages
-    'no-boolean-literal-compare': true,
-    'no-floating-promises': false, // sometimes, it is intended
+    'interface-name': [true, 'never-prefix'],
+    'interface-over-type-literal': true,
+    'member-access': [true, 'check-accessor', 'check-constructor'],
+    'no-angle-bracket-type-assertion': true,
+    'no-empty-interface': true,
     'no-for-in-array': true,
-    'no-import-side-effect': false, // sometimes, it is intended
     'no-inferrable-types': true,
     'no-inferred-empty-object-type': true,
+    'no-internal-module': true,
     'no-mergeable-namespace': true,
     'no-misused-new': true,
-    'no-non-null-assertion': false, // still using from time to time
-    'no-object-literal-type-assertion': false, // too strict for now
-    'no-unbound-method': false, // too strict for now
+    'no-namespace': [true, 'allow-declarations'],
+    'no-parameter-properties': true,
+    'no-reference': true,
     'no-unnecessary-qualifier': true,
     'no-unnecessary-type-assertion': true,
-    'no-unsafe-any': false, // too strict for now
     'no-void-expression': true,
-    'object-literal-sort-keys': false, // TODO: consider enabling when a fixer is added
-    'prefer-readonly': false, // too strict
-    'promise-function-async': true,
-    'restrict-plus-operands': false, // false posities with phantom types (`As<T>`)
     'return-undefined': true,
     'strict-boolean-expressions': [
       false, // TODO: enable when https://github.com/palantir/tslint/issues/3279 is fixed
@@ -44,65 +41,31 @@ module.exports = {
     'use-default-type-parameter': true,
 
     // all tslint-immutable rules
-    'no-class': false, // too strict
-    'no-delete': true,
-    'no-expression-statement': false, // too strict
-    'no-if-statement': false, // too strict
-    'no-let': [true, 'ignore-local'],
-    'no-loop-statement': false, // too strict
-    'no-method-signature': false, // too strict
-    'no-mixed-interface': false, // too strict
     'no-object-mutation': [true, {'ignore-prefix': ['this.']}],
-    'no-this': false, // too strict
-    'readonly-array': false, // too strict
-    'readonly-keyword': false, // too strict
 
     // all SonarTS rules
     'cognitive-complexity': true,
-    'mccabe-complexity': false, // disabled in favor of `cognitive-complexity`
     'no-accessor-field-mismatch': true,
-    'no-all-duplicated-branches': true,
     'no-array-delete': true,
-    'no-big-function': false, // ESLint's `max-statements` takes care of this
     'no-case-with-or': true,
     'no-collection-size-mischeck': true,
-    'no-commented-code': false, // seems too problematic
     'no-dead-store': true,
     'no-duplicate-string': true,
     'no-duplicated-branches': true,
     'no-element-overwrite': true,
-    'no-empty-destructuring': false, // ESLint's `no-empty-pattern` takes care of this
-    'no-empty-nested-blocks': false, // ESLint's `no-empty` takes care of this
-    'no-extra-semicolon': false, // prettier takes care of this
     'no-gratuitous-expressions': true,
-    'no-hardcoded-credentials': false, // unnecessary
     'no-identical-conditions': true,
     'no-identical-expressions': true,
     'no-identical-functions': true,
     'no-ignored-initial-value': true,
     'no-ignored-return': true,
-    'no-inconsistent-return': false, // TSC's `noImplicitReturns` takes care of this
     'no-misleading-array-reverse': true,
-    'no-misspelled-operator': false, // useless, as these operators wouldn't compile after formatting
-    'no-multiline-string-literals': false, // ESLint's `no-multi-str` takes care of this
-    'no-nested-incdec': false, // `++` and `--` are not allowed anyway
     'no-redundant-boolean': true,
-    'no-redundant-parentheses': false, // prettier takes care of this
-    'no-same-line-conditional': false, // prettier takes care of this
-    'no-self-assignment': false, // ESLint's `no-self-assign` takes care of this
     'no-small-switch': true,
-    'no-statements-same-line': false, // prettier takes care of this
     'no-unconditional-jump': true,
-    'no-unenclosed-multiline-block': false, // prettier makes this impossible
-    'no-unthrown-error': false, // doesn't work with non-standard errors and already covered by ESLint's `no-new`
     'no-unused-array': true,
-    'no-use-of-empty-return-value': false, // same thing as `no-void-expression`
     'no-useless-cast': true,
     'no-useless-increment': true,
-    'no-variable-usage-before-declaration': false, // ESLint's `no-shadow` and `no-use-before-define` make this impossible
-    'parameters-max-number': false, // ESLint's `max-params` takes care of this
-    'prefer-immediate-return': false, // I like to be explicit
-    'use-primitive-type': false, // ESLint's `no-new-wrappers` takes care of this
     'use-type-alias': true,
   },
 };
