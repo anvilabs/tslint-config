@@ -1,11 +1,9 @@
 const resolvePkg = require('resolve-pkg');
 
 module.exports = {
-  rulesDirectory: [
-    'tslint-immutable/rules',
-    'tslint-sonarts/lib/rules',
-    'tslint-misc-rules/rules',
-  ].map(rulesDir => resolvePkg(rulesDir, {cwd: __dirname})),
+  rulesDirectory: ['tslint-immutable/rules', 'tslint-sonarts/lib/rules'].map(
+    rulesDir => resolvePkg(rulesDir, {cwd: __dirname})
+  ),
   rules: {
     // only TS-specific core rules
     // TODO: keep an eye on https://github.com/nzakas/eslint-plugin-typescript/issues/5
