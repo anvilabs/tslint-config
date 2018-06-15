@@ -6,7 +6,6 @@ module.exports = {
   ),
   rules: {
     // only TS-specific core rules
-    // TODO: keep an eye on https://github.com/nzakas/eslint-plugin-typescript/issues/5
     'adjacent-overload-signatures': true,
     'array-type': [true, 'array'],
     'callable-types': true,
@@ -43,7 +42,7 @@ module.exports = {
     'no-array-mutation': true,
     'no-object-mutation': [true, {'ignore-prefix': ['this.']}],
 
-    // all SonarTS rules
+    // all tslint-sonarts rules
     'cognitive-complexity': true,
     'no-accessor-field-mismatch': true,
     'no-array-delete': true,
@@ -51,13 +50,11 @@ module.exports = {
     'no-collection-size-mischeck': true,
     'no-dead-store': true,
     'no-duplicate-in-composite': true,
-    'no-duplicate-string': true,
     'no-duplicated-branches': true,
     'no-element-overwrite': true,
     'no-gratuitous-expressions': true,
     'no-identical-conditions': true,
     'no-identical-expressions': true,
-    'no-identical-functions': true,
     'no-ignored-initial-value': true,
     'no-ignored-return': true,
     'no-in-misuse': true,
@@ -68,9 +65,7 @@ module.exports = {
     'no-unconditional-jump': true,
     'no-undefined-argument': true,
     'no-unused-array': true,
-    'no-useless-cast': true,
     'no-useless-increment': true,
     'prefer-promise-shorthand': true,
-    'use-type-alias': true,
   },
 };
