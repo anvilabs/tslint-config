@@ -85,7 +85,7 @@
   },
   "dependencies": {
     "resolve-pkg": "^1.0.0",
-    "tslint-immutable": "^4.5.2",
-    "tslint-sonarts": "^1.6.0"
+    "tslint-immutable": "^4.6.0",
+    "tslint-sonarts": "^1.7.0"
   }
 }

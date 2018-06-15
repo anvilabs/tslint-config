@@ -3834,13 +3834,13 @@ tslib@^1.9.0:
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.2.tgz#8be0cc9a1f6dc7727c38deb16c2ebd1a2892988e"
 
-tslint-immutable@^4.5.2:
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/tslint-immutable/-/tslint-immutable-4.5.2.tgz#caa6fffb60467004635b71587d9683cc26a07ca8"
+tslint-immutable@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/tslint-immutable/-/tslint-immutable-4.6.0.tgz#b93f50961c499e331d919084140f5034b84e80af"
 
-tslint-sonarts@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/tslint-sonarts/-/tslint-sonarts-1.6.0.tgz#b21366029d83e2426d207174255bb2e09525e162"
+tslint-sonarts@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/tslint-sonarts/-/tslint-sonarts-1.7.0.tgz#1bcaf9f524c86b8d4cf9a2afae736edffd2e0dea"
   dependencies:
     immutable "^3.8.2"
 
