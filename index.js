@@ -25,7 +25,7 @@ module.exports = {
     'no-parameter-properties': true,
     'no-reference': true,
     'no-unnecessary-qualifier': true,
-    'no-unnecessary-type-assertion': true,
+    'no-unnecessary-type-assertion': false, // false positives
     'no-void-expression': true,
     'return-undefined': true,
     'strict-boolean-expressions': [
@@ -39,6 +39,7 @@ module.exports = {
     'use-default-type-parameter': true,
 
     // all tslint-immutable rules
+    'no-array-mutation': true,
     'no-object-mutation': [true, {'ignore-prefix': ['this.']}],
 
     // all SonarTS rules
