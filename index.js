@@ -22,6 +22,7 @@ module.exports = {
     'no-mergeable-namespace': true,
     'no-misused-new': true,
     'no-namespace': [true, 'allow-declarations'],
+    'no-non-null-assertion': true,
     'no-parameter-properties': true,
     'no-reference': true,
     'no-unnecessary-qualifier': true,
