@@ -3,20 +3,14 @@
   "editor.insertSpaces": true,
   "editor.rulers": [80],
   "editor.tabSize": 2,
-  "[json]": {
+  "[javascript]": {
     "editor.formatOnSave": true
   },
-  "[javascript]": {
+  "[json]": {
     "editor.formatOnSave": true
   },
 
   "eslint.autoFixOnSave": true,
-  "eslint.options": {
-    "rules": {
-      "no-warning-comments": "off",
-      "prettier/prettier": "off"
-    }
-  },
 
   "files.autoSave": "off",
   "files.exclude": {
