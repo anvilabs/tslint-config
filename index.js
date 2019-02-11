@@ -38,13 +38,17 @@ module.exports = {
     'unified-signatures': true,
     'use-default-type-parameter': true,
 
-    // all tslint-immutable rules
+    // tslint-immutable rules
     'no-array-mutation': true,
     'no-object-mutation': [true, {'ignore-prefix': ['this.']}],
 
-    // all tslint-sonarts rules
+    // tslint-sonarts rules
+    'arguments-order': false,
+    'bool-param-default': false,
     'cognitive-complexity': true,
+    'max-switch-cases': false,
     'no-accessor-field-mismatch': true,
+    'no-alphabetical-sort': false,
     'no-array-delete': true,
     'no-case-with-or': true,
     'no-collapsible-if': true,
@@ -53,6 +57,7 @@ module.exports = {
     'no-duplicate-in-composite': true,
     'no-duplicated-branches': true,
     'no-element-overwrite': true,
+    'no-empty-array': true,
     'no-gratuitous-expressions': true,
     'no-identical-conditions': true,
     'no-identical-expressions': true,
@@ -62,13 +67,17 @@ module.exports = {
     'no-invariant-return': true,
     'no-inverted-boolean-check': true,
     'no-misleading-array-reverse': true,
+    'no-nested-switch': false,
     'no-redundant-boolean': true,
     'no-redundant-jump': true,
     'no-small-switch': true,
+    'no-try-promise': true,
     'no-unconditional-jump': true,
     'no-undefined-argument': true,
     'no-unused-array': true,
+    'no-useless-catch': false,
     'no-useless-increment': true,
     'prefer-promise-shorthand': true,
+    'prefer-type-guard': false,
   },
 };
