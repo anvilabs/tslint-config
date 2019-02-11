@@ -5,28 +5,12 @@ module.exports = {
     rulesDir => resolvePkg(rulesDir, {cwd: __dirname})
   ),
   rules: {
-    // only TS-specific core rules
-    'adjacent-overload-signatures': true,
-    'array-type': [true, 'array'],
+    // TS-specific core rules not provided by the ESLint plugin
+    // TODO: track at https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/ROADMAP.md
     'callable-types': true,
-    'interface-name': [true, 'never-prefix'],
-    'interface-over-type-literal': true,
-    'member-access': [true, 'check-accessor', 'check-constructor'],
-    'no-angle-bracket-type-assertion': true,
-    'no-empty-interface': true,
-    'no-for-in-array': true,
-    'no-inferrable-types': true,
     'no-inferred-empty-object-type': true,
-    'no-internal-module': true,
     'no-mergeable-namespace': true,
-    'no-misused-new': true,
-    'no-namespace': [true, 'allow-declarations'],
-    'no-non-null-assertion': true,
-    'no-parameter-properties': true,
-    'no-reference': true,
     'no-unnecessary-qualifier': true,
-    'no-unnecessary-type-assertion': false, // false positives
-    'no-void-expression': true,
     'return-undefined': true,
     'strict-boolean-expressions': [
       false, // TODO: enable when https://github.com/palantir/tslint/issues/3279 is fixed
