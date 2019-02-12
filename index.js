@@ -8,19 +8,23 @@ module.exports = {
     // TS-specific core rules not provided by the ESLint plugin
     // TODO: track at https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/ROADMAP.md
     'callable-types': true,
-    'no-inferred-empty-object-type': true,
+    'no-for-in-array': true, // requires type info
+    'no-inferred-empty-object-type': true, // requires type info
     'no-mergeable-namespace': true,
-    'no-unnecessary-qualifier': true,
-    'return-undefined': true,
+    'no-unnecessary-qualifier': true, // requires type info
+    'no-unnecessary-type-assertion': true, // requires type info
+    'restrict-plus-operands': true, // requires type info
+    'return-undefined': true, // requires type info
     'strict-boolean-expressions': [
+      // requires type info
       false, // TODO: enable when https://github.com/palantir/tslint/issues/3279 is fixed
       'allow-null-union',
       'allow-undefined-union',
       'allow-mix',
     ],
-    'strict-type-predicates': true,
+    'strict-type-predicates': true, // requires type info
     'unified-signatures': true,
-    'use-default-type-parameter': true,
+    'use-default-type-parameter': true, // requires type info
 
     // tslint-immutable rules
     'no-array-mutation': true,
